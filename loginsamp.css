@@ -1,0 +1,40 @@
+.form{
+    text-align: center;
+    margin-top: 25px;
+}
+
+h1{
+    text-align: center;
+    color:blue;
+    margin: 50px;
+    font-size: 50px;
+}
+
+.input{
+    width: 400px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+#btn{
+    background-color: blue;
+    border-color: blue;
+    color: whitesmoke;
+    font-size: small;
+}
+
+label{
+    color: blue;
+    margin-right: 65%;
+    font-size: large;
+    
+}
+
+fieldset{
+    color:blue;
+    margin-left: 500px;
+    margin-top: 100px;
+    width: 500px;
+    height: 350px;
+    border-radius: 20px;
+}

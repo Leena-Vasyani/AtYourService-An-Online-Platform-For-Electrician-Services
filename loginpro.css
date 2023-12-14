@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+      background-image: url('/img/logo.png');   
+      background-repeat: no-repeat;
+       background-size: 19%;
+       background-position: 1% 0%;
+      
+    
+  
+  }
+  
+  .container {
+    
+    color: #007bff;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 4px 4px rgba(6, 1, 0, 0.365);
+    width: 300px;
+    
+  }
+  
+  h1 {
+    
+    font-weight: 700;
+    font-size:305%;
+    text-align: center;
+    margin-bottom: 27px;
+    margin-top: 6%;
+    
+    color: #007bff;
+  
+  }
+  input[type=text]:focus,
+  input[type=password]:focus,
+  input[type=number]:focus{
+    outline: none;      
+    /* Remove default outline and use border or box-shadow */ 
+    box-shadow: 0 0 0 2px #438bd7a5; /* Full freedom. (works also with border-radius) */
+  }
+ 
+  
+  form label {
+    display: block;
+    margin-bottom: 1px;
+    font-weight: normal;
+    
+  }
+  
+  form input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 11px;
+    border: 1px solid #ccc;
+    border-radius: 33px;
+  }
+  
+  form button {
+
+    width: 100%;
+    padding: 12px;
+    margin-top:3% ;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 63px;
+    cursor: pointer;
+    
+  }
+  
+  form button:hover {
+    background-color: #0056b3;
+  }
+  

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #fff;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    margin-left: 40%;
+    margin-top: 10%;
+    border-radius: 5px;
+    text-align: center;
+    top:40%;
+    left:40%;
+}
+
+.stars {
+    margin-top: 10px;
+}
+
+.star {
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+#submit {
+    margin-top: 20px;
+}
+
+.stars {
+    margin-top: 10px;
+}
+
+.star {
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+/* Add this style for selected stars */
+.star.selected {
+    color: yellow;
+}
+
+#submit {
+    margin-top: 20px;
+}
+
+.star.selected {
+    color: yellow;
+}
+
+.close-button {
+    position: absolute;
+    top: 20%;
+    right: 44%;
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #000;
+    z-index: 3;
+    transition: color 0.3s; /* Add a smooth color transition */
+}
+
+.close-button:hover {
+    color: red; /* Change color to red on hover */
+}
+
+</style>
+</head>
+<body>
+
+    <div class="blur-background" id="blur-background">
+        <div class="popup" id="popup">
+            <button class="close-button" id="close-button">&times;</button>
+            <div class="popup-content">
+                <h2>Rate Us</h2>
+                <p>Please rate your experience:</p>
+                <div class="stars" id="stars">
+                    <span class="star" data-rating="1">&#9733;</span>
+                    <span class="star" data-rating="2">&#9733;</span>
+                    <span class="star" data-rating="3">&#9733;</span>
+                    <span class="star" data-rating="4">&#9733;</span>
+                    <span class="star" data-rating="5">&#9733;</span>
+                </div>
+                <button id="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,227 @@
+* {
+    font-family: Poppins;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  li {
+    list-style: none;
+    display: inline-block;
+  }
+  .vmenu li {
+    display: block;
+    margin-bottom: 12px;
+  }
+  html {
+    
+  }
+  body {
+    height: 100vh;
+  }
+  #side-bar {
+    background-color: #35215f;
+    width: 240px;
+    height: 100%;
+    padding: 120px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #side-bar li {
+
+    font-weight: 400;
+    font-size: larger;
+    color: #444;
+  }
+
+  #side-bar li a{
+    color: #f7f6f6;
+  }
+  #side-bar li a:hover{
+    color: #b1e0ea;
+    margin-left:10px;
+  }
+  #wrapper {
+    position: absolute;
+    left: 240px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding-top: 120px;
+    
+  }
+  #header {
+    position: fixed;
+    height: 120px;
+    left: 240px; 
+    right: 0;
+    top: 0;
+    padding: 0 40px;
+  }
+  #header * {
+    text-align: right; 
+  }
+  #header h1 {
+    height: 60px;
+    font-size: 70px;
+    font-family: "Asap", sans-serif;
+    line-height: 80px;
+    color: #353084;
+    font-weight: 600;
+    
+  }
+  #header li {
+    height: 60px;
+    line-height: 60px;
+    margin-left: 20px;
+  }
+  #content {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    .background: #efefef;
+    .box-shadow: inset 0 0 16px #aaa;
+    border-left: 1px solid #eee;
+    border-top: 1px solid #eee;
+    .padding: 40px;
+    font-size: large;
+  }
+  .list-view li {
+    position: relative;
+    padding: 8px 0;
+    background: #fff;
+    cursor: pointer;
+    .margin-bottom: 1px;
+    border-bottom: 1px solid #eee;
+    min-height: 100px;
+    transition: 0.4s all;
+    font-size: large;
+
+  }
+  .list-view li:hover {
+    background: #FFE6C8;
+    background: #FEEBD4;
+    background: #F0F9FF;
+  }
+  .list-view .misc {
+    position: absolute;
+    left: 0;
+    width: 80px;
+    height: 120px;
+    font-size: large;
+
+  }
+  .list-view .misc .responsible {
+    position: relative;
+    font-size: large;
+
+  }
+  .list-view .misc .responsible:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 10px 20px;
+    line-height: 40px;
+    font-size: 24px;
+    text-align: center;
+    border: 1px solid #888;
+  }
+  .list-view .misc .logistics:before {
+    content: "L";
+    background: rgb(50, 9, 174);
+  }
+  .list-view .misc .engineering:before {
+    content: "E";
+    background: #01B5F0;
+  }
+  .list-view .misc .quality:before {
+    content: "Q";
+    background: #7c76b2;
+  }
+  .list-view .details {
+    width: 100%;
+    padding-left: 80px;
+    padding: 4px 32px 4px 92px;
+    height: 100px;
+    font-size: large;
+
+}
+  .list-view .title {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    font-size: large;
+
+  }
+  .list-view .date {
+    float: right;
+    font-weight: bold;
+    font-size: medium;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .list-view .suggestion {
+    display: block;
+    font-size: 14px;
+    line-height: 1.5em;
+    max-height: 3em;
+    overflow: hidden;
+    text-align: justify;
+    color: #444;
+  }
+  
+  .list-view li.load-more {
+    width: 100%;
+    border: none;
+    background: transparent;
+    line-height: 100px;
+    text-align: center;
+  }
+  
+  #details-view {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s all;
+    padding-top: 80px;
+  }
+  #details-view.visible {
+    opacity: 1;
+    pointer-events: all;
+  }
+  #details-view > div {
+    height: 100%;
+    width: 100%;
+    padding: 0 40px 40px 40px;
+    background: #fff;
+    transition: 0.3s all;
+    transform: translateY(20px);
+  }
+  #details-view.visible > div {
+    transform: none;
+  }
+  #details-view article {
+    float: left;
+    width: 50%;
+  }
+  #details-view .suggestion {
+    padding-right: 40px;
+    color: #35215f;
+    font-size: large;
+  }
+  #details-view .suggestion p {
+    margin: 1em 0;
+    text-align: justify;
+    color: #35215f;
+    font-size: large;
+  }
+  
+  #details-view .review {
+    padding-left: 40px;
+    border-left: 2px solid #888;
+    height: 100%;
+  }

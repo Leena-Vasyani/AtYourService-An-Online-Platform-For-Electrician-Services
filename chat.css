@@ -1,0 +1,153 @@
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    
+ 
+}
+
+
+header {
+    display: flex;
+    background-color:#004aad; 
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+ 
+   
+}   
+.Title{
+    margin-left: 320px;
+    margin-top: 30px;
+}
+
+
+
+.cart{
+    width: 18px ;
+    margin-right:  -14px;
+}
+
+h1 {
+   
+    font-size: 36px;
+}
+
+
+nav {
+    background-color: #004badeb;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+nav a:hover{
+    color: aqua;
+
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.service {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+.sub-service-details button{
+        margin-top: 1px;
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: white;
+        background-color: #171718fc;
+        text-align: center;
+        cursor: pointer;
+        display: inline;
+        font-size: 17px;
+      
+      
+     
+}
+ .sub-service-details button:hover {
+        opacity: 0.7;
+      }
+
+.service h2 {
+    font-size: 24px;
+}
+
+.sub-service {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.sub-service img {
+    /* max-width: 100px; */
+    margin-right: 20px;
+    width: 200px;
+    border-radius: 10px;
+    /* box-shadow: 1px 0px 2px 0px rgb(153, 172, 229); */
+}
+
+.sub-service-details {
+    flex: 1;
+}
+
+.sub-service h3 {
+    font-size: 20px;
+}
+
+.sub-service p {
+    margin-top: 10px;
+}
+
+
+footer {
+    background-color: #1f5fa3;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+div .sub-service{
+    padding-top: 5%;
+}
+.logo{
+    width:200px;
+}
+
+.popup-message {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+
+
+

@@ -1,0 +1,146 @@
+
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #eff6f9; /* Blue background color */
+            color: #691515; /* White text color */
+        }
+
+        header {
+            background-color: #16194d; /* White background for the header */
+            color: #f4f8fb; /* Blue text color for the header */
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 40px;
+            font-family: sans-serif;
+            font-weight: 400px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        #booking-form {
+            background-color:#16194d;
+            margin-top: -50px;
+margin-left: -20px;
+margin-right: -20px;
+
+            border-radius: 0px;
+        }
+
+        #booking-form h2 {
+            color: #ddc9c9;
+            margin: auto;
+            text-align: center;
+            padding-top:25px ;
+            padding-bottom: 50px;
+            font-family: tahoma,Courier New;
+       font-size: 60px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #fff;
+            width:400px;
+        }
+
+        select, input[type="date"], input[type="time"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        select {
+            background-color: #fff;
+            color: #0072b5;
+        }
+
+        input[type="date"],
+        input[type="time"],
+        textarea {
+            background-color: #f2f2f2; /* Light gray background for input fields */
+            color: #0072b5;
+            width:680px;
+        }
+
+        button {
+            display: flex;
+            background-color: #fff;
+            color: #070707;
+            padding: 14px 40px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin:auto;
+            text-align: center;
+            font-size: larger;
+            font-weight: 500;
+        }
+
+        .butn{
+            padding-bottom: 20px;
+        }
+
+        button:hover {
+            text-align: center;
+            background-color: #f3f0e9e6;
+
+            color: #080808;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 2;
+        }
+
+        .confirm-box {
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            top: 25%;
+            left: 25%;
+            text-align: center;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .close {
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+        }
+
+        footer {
+            background-color: #fff; /* White background for the footer */
+            color: #0072b5; /* Blue text color for the footer */
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .form-group{
+margin: auto;
+word-wrap: break-word;
+width:700px;
+color:black;       
+ }
+
